@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prabhas portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" style="color: black; font-size: 18px; padding-right: 300px; margin-top: 7%; font-style: oblique;"><span style="color: rgba(35, 35, 222, 0.84); font-weight: 700; font-size: 22px; padding: 4px;">Welcome</span> to my portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Prabhas</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/passportsize_photo.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Prabhas Osuru</h1>
+        <p id="typing-text" class="section__text__p2"></p>
+        <!-- <p class="section__text__p2">Java Full Stack Developer</p> -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/prabhas-osuru-b98527250/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Prabhas37'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1> <br><br><br>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-picture.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Fresher</h3>
+              <p>Aspiring FSJD <br />Learning and growing</p>
+              <p>Full-Stack Development Program | TapAcademy | <br> [AUGUST 2023] - [JANUARY 2024]</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <!-- <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p> -->
+              
+                <li><span>BTech-2023</span><br />RGM college of Engineering and Technology, Nandyal<span> (7.75)</span></li>
+                <li><span>Intermediate-2019</span><br />Gnana saraswathi junior college Bethamcherla <span> (8.82)</span></li>
+                <li><span>10th-2017</span><br />PC High school cement nagar <span> (8.2)</span></li>
+              
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <p>
+                I am <strong>Osuru Prabhas</strong>, a dynamic and forward-thinking Java Full Stack Developer from a computer science engineering background. With a keen eye for detail and a knack for problem-solving, I leverage my analytical skills to create robust and scalable software solutions. Proficient in Java, SQL, and front-end technologies, I am driven by a passion for innovation and a commitment to continuous learning. Eager to contribute my unique blend of technical and analytical expertise to collaborative and impactful projects, I am excited about the endless possibilities in the world of software development.
+              </p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <br><br>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> HTML</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                &nbsp;<img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Proficient</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Servlets</h3>
+                    <p>Proficient</p>
+                  </div>
+                </article>
+                <!-- <article>
+                  &nbsp;<img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Hibernate</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+              <article>
+                &nbsp;<img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>&nbsp;&nbsp;SpringBoot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>SQL</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <br><br><br><br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              
+              
+            </div>
+            <h2 class="experience-sub-title project-title">Project 1</h2>
+            <h1>Result Management System(RMS)</h1> <br>
+            <p>A student result management system (RMS) is a software application that is used to manage and track student academic performance. RMSs can be used to improve the efficiency and accuracy of grading, as well as to provide students with better feedback on their performance. There are several softwares are exists in the world but we overcome the drawbacks of existing systems.</p> <br>
+          </div>
+
+          <!--copying project 3-->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project 2</h2>
+            <!--project new-->
+            <h1>Text Summarization</h1> <br>
+            <p>Summarizing helps students to learn the technique of taking out the most important ideas from a text. They also learn to ignore irrelevant information that is present in the text, and students with these skills are capable of integrating the central ideas in a meaningful way from any theory or conceptual write-up.</p> <br>
+            
+          </div>
+          <!---->
+
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project 3</h2>
+            <h2>Fetal Health Classification</h2> <br>
+            <p>
+              In the past, obstetricians have artificially analyzed CTG data, which is time-consuming and inaccurate. 
+              So, developing a fetal health categorization model is crucial as it may help to speed up the diagnosis 
+              and treatment and conserve medical resources. <br>
+              </p> <br>
+             <p>It combines various decision-making algorithms and does not rely on the outcome of one classifier, 
+              hence improving prediction accuracy. </p> <br>
+            <div class="btn-container">
+             
+              <!--
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://manachoice.netlify.app/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+
+         
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:prabhasosuru37@gmail.com">prabhasosuru37@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/prabhas-osuru-b98527250/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Osuru Prabhas. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
